@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_3"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/madiregular"
+        android:text="Fluee"
+        android:textColor="@color/white"
+        android:textSize="50sp" />
+
+
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:id="@+id/logoMy"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/flueelogo" />
+
+
+    <EditText
+        android:id="@+id/editTextQuery"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/logoMy"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/searchbar_bg"
+        android:hint="Arama Yap"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"/>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="Arama Yap"
+        android:textAllCaps="false"
+        android:textColor="@color/purple_3"
+        android:layout_below="@id/editTextQuery"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_bg"
+        android:id="@+id/buttonSearch"/>
+
+</RelativeLayout>
